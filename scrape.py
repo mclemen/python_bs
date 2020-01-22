@@ -25,13 +25,13 @@ for tr in table_rows:
         print('')
     else:
         print(league)
-        #db.leagues.insert_one({'league':league})  #insert data to the MongoDB collection 
+        db.leagues.insert_one({'league':league})  #insert data to the MongoDB collection 
 
     if team == []:
         print('')
     else:
         print(team, totalscore)
-        #db.leagues.insert_one({'team':team, 'totalscore': totalscore})
+        db.leagues.insert_one({'team':team, 'totalscore': totalscore})
 
 
 
